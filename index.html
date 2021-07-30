@@ -77,70 +77,95 @@
    
   <div class="container">
     <div class="jumbotron">
-      <h2>Make your own pizza!</h2>
+      <h2 class="own">Make your own pizza by following these simple steps!</h2>
     </div>
 
-    <form onsubmit="return validator()">
-      <div class="">
+    <form onsubmit="return validateInputs()">
+
+      <div class="card">
+        <h4>First create an account</h4>
         <label for="">Username</label>
-        <input type="text" name="" id="username" placeholder="Enter your name">
-        <label for=""></label>
-         <input type="text" name="" id="password" placeholder="Enter your password">
+        <input type="text" name="" id="username" placeholder="Enter your name"><br>
+        <label for="">Password</label>
+        <input type="text" name="" id="password" placeholder="Enter your password">
       </div>
       <div class="partOne">
         <div class="formGroup0ne">
           <p class="pizzaHeader">Pick your pizza size:</p>
-          <input type="radio" name="size" value="Small" id="small">Small<br>
-          <input type="radio" name="size" value="Medium" id="medium">Medium<br>
-          <input type="radio" name="size" value="Large" id="large">Large<br>
+          <input type="radio" name="size" value="Small" id="small" class="inputOne">Small<br>
+          <input type="radio" name="size" value="Medium" id="medium" class="inputOne">Medium<br>
+          <input type="radio" name="size" value="Large" id="large" class="inputOne">Large<br>
         </div>
         <div class="formGroupTwo">
           <p class="pizzaHeader">What crust would you like?</p>
-          <input type="radio" name="crust" value=">Crispy and thin" id="crispy">Crispy and thin<br>
-          <input type="radio" name="crust" value="Crammed Crust" id="crammed">Crammed Crust<br>
-          <input type="radio" name="crust" value="Double Crust" id="double">Double Crust<br>
-          <input type="radio" name="crust" value="Gluten free" id="glutenFree">Gluten free<br>
+          <input type="radio" name="crust" value=">Crispy and thin" id="crispy" class="inputOne">Crispy and thin<br>
+          <input type="radio" name="crust" value="Crammed Crust" id="crammed" class="inputOne">Crammed Crust<br>
+          <input type="radio" name="crust" value="Double Crust" id="double" class="inputOne">Double Crust<br>
+          <input type="radio" name="crust" value="Gluten free" id="glutenFree" class="inputOne">Gluten free<br>
         </div>
         <div class="formGroupTwo">
           <p class="pizzaHeader">Meat lover or vegeterian?</p>
-          <input type="radio" name="type" value="meat" id="meaty">Meat<br>
-          <input type="radio" name="type" value="vegeterian" id="veggy">Vegeterian<br>
+          <input type="radio" name="type" value="meat" id="meaty" class="inputOne">Meat<br>
+          <input type="radio" name="type" value="vegeterian" id="veggy" class="inputOne">Vegeterian<br>
         </div>
-    </div>
+     </div>
 
-    <div class="formGroupVeg">
-     <p class="pizzaHeader">What pizza toppings would you like for your <strong>pizza</strong>?</p>
-     <div class="toppingsDisplay">
-       <div class="partTwo">
-         <input type="checkbox" name="toppings" value="mushroom" id="mushroom">Mushroom
-         <input type="checkbox" name="toppings" value="olives" id="olives">Olives<br>
-         <input type="checkbox" name="toppings" value="pineapple" id="pineapple">Pineapple<br>
-         <input type="checkbox" name="toppings" value="onions" id="onions">Onions<br>
-         <input type="checkbox" name="toppings" value="tomato" id="tomato">Tomato<br>
-         <input type="checkbox" name="toppings" value="spring onions" id="springOnions">SpringOnions
+      <div class="formGroupVeg">
+       <p class="pizzaHeader">Which toppings would you like for your <strong>pizza</strong>?</p>
+       <div class="toppingsDisplay">
+          <div class="partTwo">
+            <input type="checkbox" name="toppings" value="mushroom" id="mushroom" class="inputOne">Mushroom
+            <input type="checkbox" name="toppings" value="olives" id="olives" class="inputOne">Olives<br>
+            <input type="checkbox" name="toppings" value="pineapple" id="pineapple" class="inputOne">Pineapple<br>
+            <input type="checkbox" name="toppings" value="onions" id="onions" class="inputOne">Onions<br>
+            <input type="checkbox" name="toppings" value="tomato" id="tomato" class="inputOne">Tomato<br>
+            <input type="checkbox" name="toppings" value="spring onions" id="springOnions"class="inputOne" >SpringOnions
+          </div>  
+          <div class="partThree">
+            <input type="checkbox" name="toppings" value="mozarella" id="mozarella" class="inputOne">Mozarella
+            <input type="checkbox" name="toppingsmeat" value="macon" class="inputOne">Macon<br>
+            <input type="checkbox" name="toppings" value="salami" class="inputOne">Salami<br>
+            <input type="checkbox" name="toppings" value="chicken" class="inputOne">Chicken<br>
+            <input type="checkbox" name="toppings" value="groundbeef" class="inputOne">Groundbeef<br>
+            <input type="checkbox" name="toppings" value="greenpepper" class="inputOne">Greenpepper<br>
+          </div>
        </div>  
-       <div class="partThree">
-         <input type="checkbox" name="toppings" value="mozarella" id="mozarella">Mozarella
-         <input type="checkbox" name="toppingsmeat" value="macon">Macon<br>
-         <input type="checkbox" name="toppings" value="salami">Salami<br>
-         <input type="checkbox" name="toppings" value="chicken">Chicken<br>
-         <input type="checkbox" name="toppings" value="groundbeef">Groundbeef<br>
-         <input type="checkbox" name="toppings" value="greenpepper">Greenpepper<br>
-       </div>
-     </div>  
-    </div>
+      </div>
 
-   <button type="submit">Order</button>
+     <button type="submit" id="order">PLACE ORDER</button>
 
-  </form>
+    </form>
 
+  </div>
 
   <ul id="pizzaChoices">
   </ul>
+  
+  <div class="about"> 
+    <div class="aboutUs">
+      <p>About Moki Pop Pizza</p>
+    </div>
+    <div class="branches">
+      <h3>Our Branches</h3>
+      <div class="branchone">
+        <h4>NAIROBI</h4>
+        <p>Prestige Mall<br>Ngong Road<br>0713439798</p>
+      </div>
+        <div class="branchtwo">
+          <h4>NAIROBI</h4>
+          <p>Junction Mall<br>Dagoretti Road<br>0713439798</p>
+        </div>
+     </div>
+      <div class="contact">
+        <div class="contactPartOne"></div>
+        <h3>Have feedback or questions?</h3>
+        <p>customerservice@mokipop.co.ke</p>
+       
+      </div>
+    
 
-</div>
-  
-  
+
+  </div>
    
 
 </body>

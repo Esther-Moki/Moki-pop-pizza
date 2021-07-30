@@ -1,0 +1,26 @@
+.topPart{
+  background:#fdb913;
+  border-bottom: 10px solid #000000;
+  color: #000000;
+  display: flex;
+  margin-top: 3%;
+  padding-top: 1%;
+
+}
+.logoPart{
+  display: flex;
+  font-family:'Shadows Into Light', cursive; 
+  padding-bottom: 1%;
+}
+nav{
+  margin-left: 18%;
+  text-align: right;
+}
+nav li{
+  list-style-type: none;
+  display: inline-block;
+  font-size: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 8%;
+}

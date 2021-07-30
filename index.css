@@ -5,7 +5,6 @@
   display: flex;
   margin-top: 3%;
   padding-top: 1%;
-
 }
 .logoPart{
   display: flex;
@@ -23,4 +22,28 @@ nav li{
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 8%;
+}
+.firstPart{
+  background-image:url(./assets/moki.jpeg);
+  background-size: cover;
+  margin-bottom: 3%;
+  margin-top: 1%;
+}
+.innerFirstPart{
+  padding-top: 30%;
+  padding-bottom: 10%;
+}
+.banner{
+  width: 400px;
+  height: 300px;
+  background: #000000;
+  color:#fdb913;
+  border-radius: 50%;
+  text-align: center;
+  /* margin-bottom: 20%; */
+  margin-left: 60%;
+  
+} 
+.hot{
+  padding-top: 20%;
 }

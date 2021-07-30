@@ -9,3 +9,33 @@ $(document).ready(function(){
     });
   });
 });
+$(document).ready(function(){
+  $("#pic2").click(function(){
+    $(".pick").toggle();
+    $("#pic2").hide();
+  $(".pick").click(function(){
+    $("#pic2").show();
+    $(".pick").hide();
+    });
+  });
+})
+$(document).ready(function(){
+  $("#pic3").click(function(){
+    $(".order").toggle();
+    $("#pic3").hide();
+  $(".order").click(function(){
+    $("#pic3").show();
+    $(".order").hide();
+    });
+  });
+})
+$(document).ready(function(){
+  $("#pic4").click(function(){
+    $(".doorstep").toggle();
+    $("#pic4").hide();
+  $(".doorstep").click(function(){
+    $("#pic4").show();
+    $(".doorstep").hide();
+    });
+  });
+})

@@ -113,10 +113,11 @@ main{
   margin-left: 16%;
   margin-right: 16%;
 } 
-button{
+.btn{
  margin-left: 45%;
  margin-top: 1%;
  margin-bottom: 2%;
  padding: 10px;
  border-radius: 5px;
+ background-color: red;
 }

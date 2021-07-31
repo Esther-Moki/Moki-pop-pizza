@@ -41,24 +41,56 @@ $(document).ready(function(){
 });
 
 //end of the function
+
+//form part function
+ var myForm = document.querySelector("#my-form");
+//name part
+ var nameInput = document.querySelector("#username");
+ var passwordInput = document.querySelector("#password");
+ //sizes part
+ //var pizzaSizes=document.getElementsByName("size");
+// var pizzaSizesValue=false;
+ // end of sizes part
+ var crispyCrust = document.getElementById("crispy").checked;
+ var cc = document.getElementById("crammed").checked;
+ var dd = document.getElementById("double").checked;
+ var gluten = document.getElementById("glutenFree").checked;
+ //
+ var pizzaChoices = document.querySelector("#pizzaChoices");
+
+ myForm.addEventListener("submit",onSubmit,isChecked());
+
+ function onSubmit(e){
+   e.preventDefault();
+
+   if(nameInput.value === "" ){
+     alert("Please enter your fullname");
+     return false;
+    }
+    if(passwordInput.value === ""){
+      alert("Please create a password");
+      return false;
+    }  
+
+
+    function isChecked (){
+      var smallSize=document.getElementById("small").checked;
+      var mediumSize=document.getElementById("medium").checked;
+      var largeSize=document.getElementById("large").checked;
+
+      if(smallSize == false && mediumSize == false && largeSize == false){
+        alert("Please select your pizza size");
+        return false;
+      }
+         
+    }
+  
+ }
  
 
-// moki
-// function validateInputs(){
-//   var nameInput = document.getElementById("username");
-//   var passwordInput = document.getElementById("password");
 
-//   if(nameInput.value == "" ){
-//     alert("Please enter your name");
-//     return false;
-//   }
-//   if(passwordInput.value == ""){
-//     alert("Please create a password");
-//     return false;
-//   }  
 
 //   //sizes radio checkboxes validation
-//   var pizzaHeader=document.getElementsByClassName("pizzaHeader");
 //   var smallSize=document.getElementById("small").checked;
 //   var mediumSize=document.getElementById("medium").checked;
 //   var largeSize=document.getElementById("large").checked;
@@ -185,5 +217,3 @@ $(document).ready(function(){
   //  newPizza.price();
 
   // $("#pizzaChoices").append("<li>" + "You ordered a " + newPizza.sizeValue + " " + newPizza.toppingsValue + " pizza. " + " Your total price is kshs: " + newPizza.price + "</li>");
-
-

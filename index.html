@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
 </head>
 <body>
 
@@ -80,21 +80,21 @@
       <h2 class="own">Make your own pizza by following these simple steps!</h2>
     </div>
 
-    <form onsubmit="return validateInputs()">
+    <form id="my-form">
 
       <div class="card">
         <h4>First create an account</h4>
         <label for="">Username</label>
-        <input type="text" name="" id="username" placeholder="Enter your name"><br>
+        <input type="text" name="" id="username" placeholder="Enter your fullname"><br>
         <label for="">Password</label>
         <input type="text" name="" id="password" placeholder="Enter your password">
       </div>
       <div class="partOne">
         <div class="formGroup0ne">
           <p class="pizzaHeader">Pick your pizza size:</p>
-          <input type="radio" name="size" value="Small" id="small" class="inputOne">Small<br>
-          <input type="radio" name="size" value="Medium" id="medium" class="inputOne">Medium<br>
-          <input type="radio" name="size" value="Large" id="large" class="inputOne">Large<br>
+          <input type="radio" name="size"  id="small" value ="Small" class="inputOne">Small<br>
+          <input type="radio" name="size"  id="medium" value="Medium" class="inputOne">Medium<br>
+          <input type="radio" name="size"  id="large" value="Large" class="inputOne">Large<br>
         </div>
         <div class="formGroupTwo">
           <p class="pizzaHeader">What crust would you like?</p>
@@ -131,15 +131,14 @@
           </div>
        </div>  
       </div>
+      
 
-     <button type="submit" id="order">PLACE ORDER</button>
+     <button type="submit"   class="btn">PLACE ORDER</button>
 
     </form>
-
+    
+    <ul id="pizzaChoices"></ul>
   </div>
-
-  <ul id="pizzaChoices">
-  </ul>
   
   <div class="about"> 
     <div class="aboutUs">
@@ -163,7 +162,7 @@
         </div> 
         <div class="twitter">
          <h4>Follow us</h4>
-         
+
         </div>
 
        
@@ -173,6 +172,6 @@
 
   </div>
    
-
+  <script src="script.js"></script>
 </body>
 </html>

@@ -57,6 +57,27 @@ $(document).ready(function(){
  // end of sizes part
  
  var pizzaChoices = document.querySelector("#pizzaChoices");
+ 
+ let price = 0
+ function Pizza(size,crust,type,toppings,price){
+       this.size = size,  
+       this.crust = crust,
+       this.type = type,
+       this.toppings = toppings,
+       this.price = 0
+  }
+  Pizza.prototype.price = function(){
+      if (this.size === "small"){
+           this.price += 400;
+       }else if(this.size === "medium"){
+        this.price += 600;
+       }else (this.size === "large")
+        this.price += 800;
+       
+
+        return this.price;
+      }
+
 
  myForm.addEventListener("submit",onSubmit);
 
@@ -93,12 +114,13 @@ $(document).ready(function(){
      toppingsValue += " ,"+(toppings[i]).value;
        i++;
    }  
-
-
+    
+  //  var newPizzaOrder = new Pizza(size,crust,type,toppings,price);
+  //  newPizzaOrder.price();
     
    var li = document.createElement("li");
   li.appendChild(document.createTextNode(`${nameInput.value}:  ${sizesInput} : ${crustInput}:  ${typeInput}
-  ${toppingsValue}`));
+  ${toppingsValue} :${this.price}`));
   
         pizzaChoices.appendChild(li);
 
@@ -106,36 +128,7 @@ $(document).ready(function(){
         passwordInput.value = "";
         sizesInput = "";
    
-  
-      
-         
-    //end radio checkboxes validation
 
-     var meaty=document.getElementById("meaty").checked;
-     var veggy=document.getElementById("veggy").checked;
-
-     if ((meaty ==false && veggy == false)){
-      alert("Please select if you would love meat or veggies");
-      return false;
-     }
-    
-     //toppings checkboxes
-     var mushroom = document.getElementById("mushroom").checked;
-     var olives = document.getElementById("olives").checked;
-     var pineapple = document.getElementById("pineapple").checked;
-     var onions = document.getElementById("onions").checked;
-     var tomato = document.getElementById("tomato").checked;
-     var mozarella = document.getElementById("mozarella").checked;
-     var macon = document.getElementById("macon").checked;
-     var salami = document.getElementById("salami").checked;
-     var chicken = document.getElementById("chicken").checked;
-     var groundbeef = document.getElementById("groundbeef").checked;
-     
-     if(mushroom == false && olives == false && pineapple == false && onions == false && tomato == false && 
-       mozarella == false && macon == false && salami == false && chicken == false && groundbeef == false) {
-        alert("Please select the toppings you would like");
-        return false;
-     }
     ////
     //  var li = document.createElement("li");
     //  li.appendChild(document.createTextNode(`${nameInput.value}`));

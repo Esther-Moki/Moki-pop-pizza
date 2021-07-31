@@ -41,69 +41,71 @@ $(document).ready(function(){
 });
 
 //end of the function
+ 
 
-function validateInputs(){
-  var nameInput = document.getElementById("username");
-  var passwordInput = document.getElementById("password");
+// moki
+// function validateInputs(){
+//   var nameInput = document.getElementById("username");
+//   var passwordInput = document.getElementById("password");
 
-  if(nameInput.value == "" ){
-    alert("Please enter your name");
-    return false;
-  }
-  if(passwordInput.value == ""){
-    alert("Please create a password");
-    return false;
-  }  
+//   if(nameInput.value == "" ){
+//     alert("Please enter your name");
+//     return false;
+//   }
+//   if(passwordInput.value == ""){
+//     alert("Please create a password");
+//     return false;
+//   }  
 
-  //sizes radio checkboxes validation
-  var pizzaHeader=document.getElementsByClassName("pizzaHeader");
-  var smallSize=document.getElementById("small").checked;
-  var mediumSize=document.getElementById("medium").checked;
-  var largeSize=document.getElementById("large").checked;
+//   //sizes radio checkboxes validation
+//   var pizzaHeader=document.getElementsByClassName("pizzaHeader");
+//   var smallSize=document.getElementById("small").checked;
+//   var mediumSize=document.getElementById("medium").checked;
+//   var largeSize=document.getElementById("large").checked;
   
-  if(smallSize == false && mediumSize == false && largeSize == false){
-    alert("Please select your pizza size");
-    return false;
-  }
-  //end of the sizes validation  
+//   if(smallSize == false && mediumSize == false && largeSize == false){
+//     alert("Please select your pizza size");
+//     return false;
+//   }
+//   //end of the sizes validation  
   
-  //crust radio checkboxes validation
-  var crispyCrust=document.getElementById("crispy").checked;
-  var cc=document.getElementById("crammed").checked;
-  var dd=document.getElementById("double").checked;
-  var gluten=document.getElementById("glutenFree").checked;
+//   //crust radio checkboxes validation
+//   var crispyCrust=document.getElementById("crispy").checked;
+//   var cc=document.getElementById("crammed").checked;
+//   var dd=document.getElementById("double").checked;
+//   var gluten=document.getElementById("glutenFree").checked;
 
-  if( crispyCrust == false && cc == false && dd == false && gluten == false){
-    alert("Please pick the crust you would like");
-    return false;
-  }
+  // if( crispyCrust == false && cc == false && dd == false && gluten == false){
+  //   alert("Please pick the crust you would like");
+  //   return false;
+  // }
 
-  //end radio checkboxes validation
-  var meaty=document.getElementById("meaty").checked;
-  var veggy=document.getElementById("veggy").checked;
-  var formGroupVeg=document.getElementsByClassName("formGroupVeg");
-  var formGroupMeat=document.getElementsByClassName("formGroupMeat");
-  if ((meaty ==false && veggy == false)){
-    alert("Please select if you would love meat or veggies");
-    return false;
-  }
+  // //end radio checkboxes validation
+  // var meaty=document.getElementById("meaty").checked;
+  // var veggy=document.getElementById("veggy").checked;
+  // var formGroupVeg=document.getElementsByClassName("formGroupVeg");
+  // var formGroupMeat=document.getElementsByClassName("formGroupMeat");
+  // if ((meaty ==false && veggy == false)){
+  //   alert("Please select if you would love meat or veggies");
+  //   return false;
+  // }
 
-  //toppings checkboxes
-  var mushroom=document.getElementById("mushroom").checked;
-  var olives=document.getElementById("olives").checked;
-  var pineapple=document.getElementById("pineapple").checked;
-  var onions=document.getElementById("onions").checked;
-  var tomato=document.getElementById("tomato").checked;
-  var springOnions=document.getElementById("springOnions").checked;
-  var mozarella=document.getElementById("mozarella").checked;
+  // //toppings checkboxes
+  // var mushroom=document.getElementById("mushroom").checked;
+  // var olives=document.getElementById("olives").checked;
+  // var pineapple=document.getElementById("pineapple").checked;
+  // var onions=document.getElementById("onions").checked;
+  // var tomato=document.getElementById("tomato").checked;
+  // var springOnions=document.getElementById("springOnions").checked;
+  // var mozarella=document.getElementById("mozarella").checked;
    
-  if(mushroom == false && olives == false && pineapple == false && onions == false && tomato == false && 
-    springOnions == false && mozarella == false) {
-      alert("Please select the toppings you would like");
-      return false;
-    }
+  // if(mushroom == false && olives == false && pineapple == false && onions == false && tomato == false && 
+  //   springOnions == false && mozarella == false) {
+  //     alert("Please select the toppings you would like");
+  //     return false;
+  //   }
 
-
+  // moki
 
   //price part
   
@@ -119,17 +121,17 @@ function validateInputs(){
   // }  
   
    
-  function Pizza(size,crust,type,toppings){
-      this.size = size,  
-      this.crust = crust,
-      this.type = type,
-      this.toppings = toppings
-  }
+  // function Pizza(size,crust,type,toppings){
+  //     this.size = size,  
+  //     this.crust = crust,
+  //     this.type = type,
+  //     this.toppings = toppings
+  // }
 
 
-  Pizza.prototype.price = function(){
-    if (this.size === "small"){
-      console.log("mokimo"); }
+  // Pizza.prototype.price = function(){
+  //   if (this.size === "small"){
+  //     console.log("mokimo"); }
       // this.price += 300;
     // }else if(this.size === "medium"){
     //   this.price += 500;
@@ -137,7 +139,7 @@ function validateInputs(){
     //   this.price += 700;
     // }
     // return `${this.size}`
-  }
+  
   //  if (this.toppings.indexOf("mushroom") >= 0) {
   //     this.pizzaPrice += 100;
   //   }
@@ -185,4 +187,3 @@ function validateInputs(){
   // $("#pizzaChoices").append("<li>" + "You ordered a " + newPizza.sizeValue + " " + newPizza.toppingsValue + " pizza. " + " Your total price is kshs: " + newPizza.price + "</li>");
 
 
-}

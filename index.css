@@ -1,6 +1,6 @@
 .topPart{
   background:#fdb913;
-  border-bottom: 10px solid #000000;
+  border-bottom: 10px solid #121B22;
   color: #000000;
   display: flex;
   margin-top: 3%;
@@ -9,10 +9,10 @@
 .logoPart{
   display: flex;
   font-family:'Shadows Into Light', cursive; 
-  padding-bottom: 1%;
+  padding-bottom: 2%;
 }
 nav{
-  margin-left: 18%;
+  margin-left: 31%;
   text-align: right;
 }
 nav li{
@@ -24,14 +24,14 @@ nav li{
   padding-top: 8%;
 }
 .firstPart{
-  background-image:url(./assets/moki.jpeg);
+  background-image:url(./assets/MOMO.jpg);
   background-size: cover;
   margin-bottom: 3%;
-  margin-top: 1%;
+  /* margin-top: 1%; */
 }
 .innerFirstPart{
   padding-top: 44%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
 
 }
 .banner{
@@ -115,14 +115,72 @@ main{
 } 
 .btn{
  margin-left: 42%;
- margin-top: 1%;
+ margin-top: 3%;
  margin-bottom: 2%;
  padding: 10px;
  border-radius: 5px;
  background-color: #ccc;
+ 
 }
+/*  */
+.special{
+  margin-top: 2%;
+  text-align: center;
+  font-family:'Shadows Into Light', cursive;  
+}
+.decker{
+  text-align: center;
+  margin-top: 1%;
+}
+.specialOffer1{
+  display: flex;
+  margin-left: 23%;
+  margin-top: 1%;
+}
+.chicken,.meat{
+  margin-right: 5%;
+}
+
+.offerOne{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+}
+.offerTwo{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+}
+.meat{
+  margin-left: 6%;
+}
+.cream{
+  text-align: center;
+  margin-right: 5%;
+}
+.double{
+  width: 400px;
+  height:300px ;
+}
+.specialOffer2{
+  display: flex;
+  margin-left: 17%;
+}
+.layers{
+  text-align: center;
+}
+
+
 .about{
   display: flex;
   justify-content: space-between;
-  margin-left: 2%;
+  margin-top: 2%;
+  background-color:#121B22;
+  color:#ffffff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.aboutUs,.contact{
+  margin-left: 4%;
+  margin-right: 4%;
 }

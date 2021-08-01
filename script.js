@@ -49,22 +49,23 @@
   var passwordInput = document.querySelector("#password");
   var pizzaChoices = document.querySelector("#pizzaChoices");
 
+  var pizzaprice = 0;
 
-  function Pizza(size,crust,type,toppings){
-    this.size = size,  
-    this.crust = crust,
-    this.type = type,
-    this.toppings = toppings
+  function Pizza(sizesInput,crustInput,typeInput,toppingsValue){
+    this.sizesInput =  sizesInput,  
+    this.crustInput = crustInput,
+    this.typeInput = typeInput,
+    this.toppingsValue = toppingsValue 
   }
   Pizza.prototype.price = function(){
-    if (this.size === "small"){ 
-      this.price = 400;
-    }else if(this.size === "medium"){
-      this.price = 600;
-    }else (this.size === "large")
-      this.price = 800;
+    if (sizesInput === "Small"){ 
+      this.pizzaprice += 600;
+    }else if(sizesInput === "Medium"){
+      this.pizzaprice += 800;
+    }else (sizesInput === "Large")
+      this.pizzaprice += 1000;
+      return this.pizzaprice;  
   }
-  // return this.price();
 
   myForm.addEventListener("submit",onSubmit);
 
@@ -130,10 +131,12 @@
     i++;
     }  
 
-        
+    // var newPizzaOrder = new Pizza(sizesInput,crustInput,typeInput,toppingsValue,pizzaPrice);
+    // newPizzaOrder.price();
+
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(`${nameInput.value}:  ${sizesInput} : ${crustInput}:  ${typeInput}
-    ${toppingsValue}`));
+    ${toppingsValue} :${pizzaprice}`));
     
     pizzaChoices.appendChild(li);
 

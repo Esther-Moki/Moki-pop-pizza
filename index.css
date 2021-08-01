@@ -1,3 +1,5 @@
+/*********************** begginning of top banner part *************************/
+
 .topPart{
   background:#fdb913;
   border-bottom: 10px solid #121B22;
@@ -27,12 +29,10 @@ nav li{
   background-image:url(./assets/MOMO.jpg);
   background-size: cover;
   margin-bottom: 3%;
-  /* margin-top: 1%; */
 }
 .innerFirstPart{
   padding-top: 44%;
   padding-bottom: 4%;
-
 }
 .banner{
   width: 290px;
@@ -49,12 +49,17 @@ nav li{
   margin-left: 5%;
   transform: rotate(240deg);
 }
+
+/*************************** end of top banner part *************************/
+
+/*************************** beginning of how to order part ***************************/
+
 .secondPart{
   padding-top: 2%;
-  /* background-color: #fdb913; */
 }
 .delivery{
   text-align: center;
+  font-family:'Shadows Into Light', cursive; 
 } 
 main{
   display: flex;
@@ -74,6 +79,9 @@ main{
   display: none;
 }
 
+/************************* end of how to order part ****************************/
+
+/*************************** beginning of the form part *************************/
 .container{
   background-color: #fdb913;
   border-radius: 5px;
@@ -93,7 +101,6 @@ main{
   padding: 10px;
   border-radius: 10px;
 }
-
 .partOne{
   display: flex;
   justify-content: space-between;
@@ -122,7 +129,10 @@ main{
  background-color: #ccc;
  
 }
-/*  */
+
+/**************************** end of form part ****************************/ 
+
+/************************ beginning of special offers part ************************/
 .special{
   margin-top: 2%;
   text-align: center;
@@ -140,7 +150,6 @@ main{
 .chicken,.meat{
   margin-right: 5%;
 }
-
 .offerOne{
   display: flex;
   justify-content: space-between;
@@ -170,6 +179,9 @@ main{
   text-align: center;
 }
 
+/************************** end of special offers part part **************************/
+
+/**************************** beginning of about us part ***************************/
 
 .about{
   display: flex;
@@ -184,3 +196,5 @@ main{
   margin-left: 4%;
   margin-right: 4%;
 }
+
+/**************************** end of about us part ****************************/

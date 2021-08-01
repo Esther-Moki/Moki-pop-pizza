@@ -40,38 +40,29 @@ $(document).ready(function(){
   });
 });
 
-//end of the function
+//end of the how to make an order toggle function//
 
-//form part function
+//form validation and placing your order function//
+
  var myForm = document.querySelector("#my-form");
-//name part
  var nameInput = document.querySelector("#username");
  var passwordInput = document.querySelector("#password");
-
- //sizes part
-//  var sizesInput = $("input[type=radio][name=size]:checked");
- //var smallSize=document.getElementById("small").checked;
- //var mediumSize=document.getElementById("medium").checked;
- //var largeSize=document.getElementById("large").checked;
-// var pizzaSizesValue=false;
- // end of sizes part
- 
  var pizzaChoices = document.querySelector("#pizzaChoices");
 
 
  function Pizza(size,crust,type,toppings){
-       this.size = size,  
-       this.crust = crust,
-       this.type = type,
-       this.toppings = toppings
+  this.size = size,  
+  this.crust = crust,
+  this.type = type,
+  this.toppings = toppings
   }
   Pizza.prototype.price = function(){
       if (this.size === "small"){
-           this.price += 400;
+           this.price = 400;
        }else if(this.size === "medium"){
-        this.price += 600;
+        this.price = 600;
        }else (this.size === "large")
-        this.price += 800;
+        this.price = 800;
         return this.price();
       }
 
@@ -81,13 +72,11 @@ $(document).ready(function(){
  function onSubmit(e){
    e.preventDefault();
 
-   
    if(nameInput.value === "" ){
      alert("Please enter your fullname");
      return false;
     }
-
-    if(passwordInput.value === ""){
+   if(passwordInput.value === ""){
       alert("Please create a password");
       return false;
     }  

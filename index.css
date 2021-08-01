@@ -100,6 +100,7 @@ main{
 #username,#password{
   padding: 10px;
   border-radius: 10px;
+  outline: none;
 }
 .partOne{
   display: flex;
@@ -126,7 +127,8 @@ main{
  margin-bottom: 2%;
  padding: 10px;
  border-radius: 5px;
- background-color: #ccc;
+ background-color:#121B22 ;
+ color: #ccc;
  
 }
 
@@ -144,7 +146,7 @@ main{
 }
 .specialOffer1{
   display: flex;
-  margin-left: 23%;
+  margin-left: 20%;
   margin-top: 1%;
 }
 .chicken,.meat{
@@ -164,7 +166,7 @@ main{
   margin-left: 6%;
 }
 .cream{
-  text-align: center;
+  text-align: left;
   margin-right: 5%;
 }
 .double{
@@ -176,21 +178,22 @@ main{
   margin-left: 17%;
 }
 .layers{
-  text-align: center;
+  text-align: left;
 }
 
 /************************** end of special offers part part **************************/
 
 /**************************** beginning of about us part ***************************/
-
+footer{
+  background-color:#121B22; 
+  color:#ffffff;
+}
 .about{
   display: flex;
   justify-content: space-between;
   margin-top: 2%;
-  background-color:#121B22;
-  color:#ffffff;
   padding-top: 2%;
-  padding-bottom: 2%;
+  /* padding-bottom: 2%; */
 }
 .aboutUs,.contact{
   margin-left: 4%;
@@ -198,6 +201,10 @@ main{
 }
 .story,.branchone,.branchtwo,.customer,.twitter{
   margin-left: 15%;
+}
+.copyright{
+  margin-left: 38%;
+  padding-bottom: 2%;
 }
 
 /**************************** end of about us part ****************************/

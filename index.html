@@ -11,10 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
-  <!-- <script src="script.js"></script> -->
 </head>
 <body>
 
+ <!------------------------------- begginning of top banner part --------------------------------->
   <div class="topPart">
     <div class="logoPart">
       <img src="./assets/topicon.png" alt="" srcset="">
@@ -28,59 +28,69 @@
         <li>SIGN IN</li>
       </ul>
     </nav>
- </div> 
+  </div> 
   
- <div class="firstPart">
-   <div class="innerFirstPart">
-     <div class="banner">
-       <h5 class="hot">MAKE YOUR OWN<br>FRESH PIZZA AND<br>HAVE IT DELIVERED<br>AT YOUR DOORSTEP!</h5>
-     </div>
-   </div>
+  <div class="firstPart">
+    <div class="innerFirstPart">
+      <div class="banner">
+        <h5 class="hot">MAKE YOUR OWN<br>FRESH PIZZA AND<br>HAVE IT DELIVERED<br>AT YOUR DOORSTEP!</h5>
+      </div>
+    </div>
   </div>
 
+ <!-------------------------------- end of top banner part ------------------------------------>
+
+ <!------------------------------- beginning of how to order part ------------------------------->
   <div class="secondPart">
     <div class="delivery">
-     <img src="./assets/small.png" alt="" srcset="" class="onepic">
-     <h1>HOW TO MAKE AN ORDER</h1>
+      <img src="./assets/small.png" alt="" srcset="" class="onepic">
+      <h1>HOW TO MAKE AN ORDER</h1>
     </div>
     <main>
       <div class="signUp">
         <img src="./assets/document.png" alt="" srcset="" id="pic1">
-         <div class="register">
-          <p class="words">Sign up by creating<br>a username and a<br>password to initialize<br>your order.<br></p>
-         </div>
+        <div class="register">
+          <p class="words">
+            Sign up by creating<br>a username and a<br>password to initialize<br>your order.<br>
+         </p>
+        </div>
      </div>
       <div class="crust">
         <img src="./assets/checkbox.png" alt="" srcset="" id="pic2">
         <div class="pick">
-          <p class="words">Select the pizza<br>size,type,crust and<br>toppings you would<br> like on your pizza.</p> 
+          <p class="words">
+            Select the pizza<br>size,type,crust and<br>toppings you would<br> like on your pizza.
+          </p> 
+       </div>
       </div>
-      </div>
-      <div>
+      <div class="payment">
         <img src="./assets/cashless-payment.png" alt="" srcset="" id="pic3">
         <div class="order">
-          <p class="words">Pay after ordering<br>to notify us to start<br>working on the order.</p> 
+          <p class="words">
+            Pay after ordering<br>to notify us to start<br>working on the order.
+          </p> 
         </div>
       </div>
-      <div>
+      <div class="delivery">
         <img src="./assets/pizza (1).png" alt="" srcset="" id="pic4">
         <div class="doorstep">
-          <p class="words">After 15mins,you can<br>have your pizza in house,<br>take out or delivered<br>
-            at your doorstep<br>at a small fee.
+          <p class="words">
+            After 15mins,you can<br>have your pizza in house,<br>take out or delivered<br>at your doorstep<br>at a small fee.
           </p>
         </div>
       </div>
-  
-    </main>
+   </main>
   </div>
+
+ <!--------------------------------- end of how to order part ------------------------------->
+
+ <!--------------------------------- beginning of the form part ------------------------------->
    
   <div class="container">
     <div class="jumbotron">
       <h2 class="own">Make your own pizza by following these simple steps!</h2>
     </div>
-
     <form id="my-form">
-
       <div class="card">
         <h4>First create an account</h4>
         <label for="">Username</label>
@@ -125,19 +135,18 @@
             <input type="checkbox" name="toppings" value="Salami" id="salami" class="inputOne">Salami<br>
             <input type="checkbox" name="toppings" value="Chicken" id="chicken" class="inputOne">Chicken<br>
             <input type="checkbox" name="toppings" value="Croundbeef" id="groundbeef" class="inputOne">Groundbeef<br>
-        
           </div>
        </div>  
       </div>
-      
-
-     <button type="submit"   class="btn">PLACE YOUR ORDER</button>
-
-    </form>
+      <button type="submit"   class="btn">PLACE YOUR ORDER</button>
+   </form>
     
     <ul id="pizzaChoices"></ul>
   </div>
   
+ <!--------------------------------- end of form part ------------------------------->
+
+ <!--------------------------------- beginning of special offers part ------------------------------->
   
   <section>
     <h2 class="special">SPECIAL OFFERS AT MOKI POP'S PIZZA PLACE</h2>
@@ -146,11 +155,12 @@
       <div class="specialOffer1">
         <div class="offerOne">
           <div class="chicken">
-            <h3>Chicken:</h3>
+            <h3>Chicken:</h3> 
           </div>
           <div class="cream">
-            <p>You get cream cheese chicken<br>diced tomatoes mushroom<br>onions,mozzarella and BBQ sauce<br>
-            sandwiched between<br> two crisp bases.
+            <p>
+              You get cream cheese chicken<br>diced tomatoes mushroom<br>onions,mozzarella and BBQ sauce<br>
+              sandwiched between<br>two crisp bases.
             </p>
           </div>
         </div>
@@ -158,9 +168,9 @@
           <img src="./assets/double-decker-pizza.jpg" alt="" srcset="" class="double">
         </div>
       </div>
-   </div>
-   <div class="totalOffer2">
-     <h2 class="decker">TRIPPLE-DECKER:</h2>
+    </div>
+    <div class="totalOffer2">
+      <h2 class="decker">TRIPPLE-DECKER:</h2>
       <div class="specialOffer2">
         <div class="picoffer2">
           <img src="./assets/tripple.jpg" alt="" srcset=""  class="double">
@@ -170,15 +180,19 @@
             <h3>MEAT:</h3> 
           </div>
           <div class="beef">
-            <p class="layers">You get three layers<br>,three cheeses,cream cheese,<br>ground beef,macon,<br>,tomatoes,
-              mozzarella <br>topped with BBQ sauce<br> and a sprinkle of parsely. 
+            <p class="layers">
+              You get three layers<br>,three cheeses,cream cheese<br>ground beef,macon,<br>tomatoes,
+              mozzarella<br>topped with BBQ sauce<br>and a sprinkle of parsely. 
             </p> 
           </div>
         </div>
-     </div>
+      </div>
    </div> 
- </section>
-  .
+  </section>
+  
+ <!--------------------------------- end of special offers part part -------------------------------> 
+
+ <!----------------------------------- beginning of about us part --------------------------------->
 
   <div class="about"> 
     <div class="aboutUs">
@@ -194,20 +208,22 @@
         <h4>NAIROBI</h4>
         <p>Junction Mall<br>Dagoretti Road<br>0713439798</p>
       </div>
-   </div>
+    </div>
     <div class="contact">
       <div class="contactPartOne">
         <h3>Have feedback or questions?</h3>
         <p>customerservice@mokipop.co.ke</p>
-     </div> 
-     <div class="twitter">
+      </div> 
+      <div class="twitter">
        <h4>Follow us</h4>
        <img src="./assets/facebook.png" alt="" srcset="">
        <img src="./assets/twitter.png" alt="" srcset="">
-     </div>
-     </div>
-   </div>
+      </div>
+    </div>
   </div> 
+
+ <!--------------------------------- end of about us part ------------------------------->
+
   <script src="script.js"></script>
-</body>
+</body> 
 </html>

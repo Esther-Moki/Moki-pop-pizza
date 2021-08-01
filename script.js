@@ -63,9 +63,8 @@
       this.price = 600;
     }else (this.size === "large")
       this.price = 800;
-    return this.price();
   }
-
+  // return this.price();
 
   myForm.addEventListener("submit",onSubmit);
 
@@ -144,102 +143,18 @@
     
   }
 
+ 
+
   //end of form validation and placing your order function//
 
 
 
-  // //toppings checkboxes
-  // var mushroom=document.getElementById("mushroom").checked;
-  // var olives=document.getElementById("olives").checked;
-  // var pineapple=document.getElementById("pineapple").checked;
-  // var onions=document.getElementById("onions").checked;
-  // var tomato=document.getElementById("tomato").checked;
-  // var springOnions=document.getElementById("springOnions").checked;
-  // var mozarella=document.getElementById("mozarella").checked;
-   
-  // if(mushroom == false && olives == false && pineapple == false && onions == false && tomato == false && 
-  //   springOnions == false && mozarella == false) {
-  //     alert("Please select the toppings you would like");
-  //     return false;
-  //   }
-
-  // moki
-
-  //price part
   
-  // var sizeValue = document.querySelector('input[name = "size"]:checked').value;
-  // var crustValue = document.querySelector('input[name = "crust"]:checked').value;
-  // var typeValue = document.querySelector('input[name = "type"]:checked').value;
-  // var toppings = $("input[type=checkbox][name=toppings]:checked");
-  // var toppingsValue = " ";
-  // var i = 0;
-  // while(i < toppings.length){
-  //   toppingsValue += " ,"+(toppings[i]).value;
-  //   i++;
-  // }  
   
-   
-  // function Pizza(size,crust,type,toppings){
-  //     this.size = size,  
-  //     this.crust = crust,
-  //     this.type = type,
-  //     this.toppings = toppings
-  // }
-
-
-  // Pizza.prototype.price = function(){
-  //   if (this.size === "small"){
-  //     console.log("mokimo"); }
-      // this.price += 300;
-    // }else if(this.size === "medium"){
-    //   this.price += 500;
-    // }else if(this.size === "large"){
-    //   this.price += 700;
-    // }
-    // return `${this.size}`
-  
-  //  if (this.toppings.indexOf("mushroom") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("olives") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("pineapple") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("onions") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("tomato") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("mozarella") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("macon") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("salami") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("chicken") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  //   if (this.toppings.indexOf("groundbeef") >= 0) {
-  //     this.pizzaPrice += 100;
-  //   }
-  // return this.price;
-
-
-  //  $('input[type=checkbox]:checked').each(function(index){
-  //   //part where the magic happens
-  //   console.log(index+' checkbox has value' +$(this).val());
-  // });
   
 
 
+  
 
-  //  var newPizza = new Pizza(sizeValue,crustValue,typeValue,toppingsValue,price);
-  //  newPizza.price();
 
-  // $("#pizzaChoices").append("<li>" + "You ordered a " + newPizza.sizeValue + " " + newPizza.toppingsValue + " pizza. " + " Your total price is kshs: " + newPizza.price + "</li>");
+ 

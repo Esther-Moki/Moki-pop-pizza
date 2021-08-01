@@ -20,7 +20,7 @@ No known bugs
  1. HTML
  2. CSS 
  3. Javascript
-*4. jQuery
+ 4. jQuery
 
 ## Support and contact details
 If you run into any issues or have questions, ideas,concerns or even want to make a contribution to the code,you can drop me an email on esthermoki@student.moringaschool.com.

@@ -120,6 +120,20 @@
         alert("Please select the toppings you would like");
         return false;
       }
+
+    var dineInput = document.getElementById("dine-in").checked;
+    var homeDeliveryInput =  document.getElementById("homeDelivery").checked;
+    if( dineInput == false && homeDeliveryInput == false){
+       alert("Please select if your dinning in or if its home delivery");
+        return false;
+     }
+
+    if( homeDeliveryInput  == true  ) {
+      var locationInput = "Please put your location";
+      var locationInputOne = prompt(locationInput);
+       alert("Your pizza will be delivered at: " + locationInputOne);
+      }
+  
     
     var sizesInput = $("input[type=radio][name=size]:checked").val();
     var crustInput = $("input[type=radio][name=crust]:checked").val();
@@ -131,16 +145,16 @@
     toppingsValue += " ,"+(toppings[i]).value;
     i++;
     }  
+    var placeInput = $("input[type=radio][name=place]:checked").val();
 
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(`Name: ${nameInput.value}, Pizza size: ${sizesInput}, Crust: ${crustInput}, Type: ${typeInput},
-    Toppings: ${toppingsValue}, kshs: ${pizzaprice}`));
+    Toppings: ${toppingsValue}, kshs: ${pizzaprice},${placeInput}, ${locationInputOne}`));
     
     pizzaChoices.appendChild(li);
 
     nameInput.value = "";
     passwordInput.value = "";
-    sizesInput = "";
     
   }
 

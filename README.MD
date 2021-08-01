@@ -10,7 +10,7 @@ This is a detailed website about MOKI POP PIZZA,which happens to be a restaurant
 
 ## Setup/Installation Requirements
 * Fork/Clone the repository
-* $ git clone https://github.com/PaulinhoNdegwa/MPFT45-PetProject.git
+* $ git clone  https://esther-moki.github.io/Moki-pop-pizza/
 * Open your project on your favorite editor
 * Open project on Live Server
 

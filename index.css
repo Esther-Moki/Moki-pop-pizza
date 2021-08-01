@@ -196,5 +196,8 @@ main{
   margin-left: 4%;
   margin-right: 4%;
 }
+.story,.branchone,.branchtwo,.customer,.twitter{
+  margin-left: 15%;
+}
 
 /**************************** end of about us part ****************************/

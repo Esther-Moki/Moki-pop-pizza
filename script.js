@@ -55,7 +55,8 @@
     this.sizesInput =  sizesInput,  
     this.crustInput = crustInput,
     this.typeInput = typeInput,
-    this.toppingsValue = toppingsValue 
+    this.toppingsValue = toppingsValue,
+    this.pizzaprice = priceValue;
   }
   Pizza.prototype.price = function(){
     if (sizesInput === "Small"){ 
@@ -131,12 +132,9 @@
     i++;
     }  
 
-    // var newPizzaOrder = new Pizza(sizesInput,crustInput,typeInput,toppingsValue,pizzaPrice);
-    // newPizzaOrder.price();
-
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode(`${nameInput.value}:  ${sizesInput} : ${crustInput}:  ${typeInput}
-    ${toppingsValue} :${pizzaprice}`));
+    li.appendChild(document.createTextNode(`Name: ${nameInput.value}, Pizza size: ${sizesInput}, Crust: ${crustInput}, Type: ${typeInput},
+    Toppings: ${toppingsValue}, kshs: ${pizzaprice}`));
     
     pizzaChoices.appendChild(li);
 
@@ -145,8 +143,6 @@
     sizesInput = "";
     
   }
-
- 
 
   //end of form validation and placing your order function//
 

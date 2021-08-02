@@ -115,26 +115,24 @@
     var salami=document.getElementById("salami").checked;
     var chicken=document.getElementById("chicken").checked;
     var groundbeef=document.getElementById("groundbeef").checked;
-    if (mushroom ==false && olives == false && pineapple == false && onions == false && tomato == false && 
-        mozarella ==false && macon == false && salami == false && chicken == false && groundbeef == false ){
-        alert("Please select the toppings you would like");
-        return false;
-      }
+    if(mushroom ==false && olives == false && pineapple == false && onions == false && tomato == false && 
+      mozarella ==false && macon == false && salami == false && chicken == false && groundbeef == false ){
+      alert("Please select the toppings you would like");
+      return false;
+    }
 
     var dineInput = document.getElementById("dine-in").checked;
     var homeDeliveryInput =  document.getElementById("homeDelivery").checked;
-    if( dineInput == false && homeDeliveryInput == false){
+    if(dineInput == false && homeDeliveryInput == false){
        alert("Please select if your dinning in or if its home delivery");
-        return false;
+       return false;
      }
-
-    if( homeDeliveryInput  == true  ) {
+    if(homeDeliveryInput  == true){
       var locationInput = "Please put your location";
       var locationInputOne = prompt(locationInput);
-       alert("Your pizza will be delivered at: " + locationInputOne);
-      }
+      alert("Your pizza will be delivered at: " + locationInputOne);
+     }
   
-    
     var sizesInput = $("input[type=radio][name=size]:checked").val();
     var crustInput = $("input[type=radio][name=crust]:checked").val();
     var typeInput = $("input[type=radio][name=type]:checked").val();
